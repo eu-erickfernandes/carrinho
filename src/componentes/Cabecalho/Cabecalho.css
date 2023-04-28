@@ -1,0 +1,25 @@
+.cabecalho{
+    border-bottom: 1px solid #c1c1c1;
+}
+
+.cabecalho__container{
+    align-items: center;
+    display: flex;
+    padding-block: 2rem;
+    justify-content: space-between;
+    margin-inline: auto;
+    max-width: 1200px;
+    padding-inline: 1.5rem;
+}
+
+.cabecalho__logo{
+    aspect-ratio: 1;
+    border-radius: 100vmax;
+    width: 3.5rem;
+}
+
+.cabecalho__dropdowns{
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+}

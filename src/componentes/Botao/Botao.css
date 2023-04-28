@@ -1,0 +1,27 @@
+.botao{
+    /* background-color: hsl(210, 100%, 30%);
+    border: none;
+    border-radius: 100vmax;
+    color: #FFF;
+    
+    padding-block: .75rem;
+    padding-inline: 2rem;
+    transition: .5s; */
+    background-color: rgba(0, 0, 0, .5);
+    border: none;
+    border-radius: 100vmax;
+    color: #FFF;
+    cursor: pointer;
+    font-family: 'Material Icons';
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: .4rem;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    transition: .5s;
+}
+
+.botao:hover{
+    background-color: rgba(0, 0, 0, .75);
+}

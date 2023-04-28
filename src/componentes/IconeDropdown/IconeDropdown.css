@@ -1,0 +1,13 @@
+.icone-dropdown{
+    align-items: center;
+    aspect-ratio: 1;
+    background-color: hsl(0, 0%, 90%);
+    border-radius: 100vmax;
+    color: black;
+    cursor: pointer;
+    display: flex;
+    font-family: 'Material Icons';
+    font-size: 1rem;
+    justify-content: center;
+    width: 2rem;
+}

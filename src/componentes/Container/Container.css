@@ -1,0 +1,20 @@
+.titulo{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.container{
+    /* background-color: #FFF; */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+    margin-inline: auto;
+    max-width: 1200px;
+}
+
+.lista-cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
