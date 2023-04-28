@@ -3,7 +3,6 @@
     border-radius: .5rem;
     cursor: pointer;
     flex-basis: calc((100% / 3) - 1rem);
-    max-height: fit-content;
     overflow: hidden;
     position: relative;
     transition: .5s;
@@ -37,6 +36,27 @@
     font-weight: 600;
 }
 
-.card:not(:hover) .botao{
+.card__botoes{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    position: absolute;
+    right: .5rem;
+    top: .5rem;
+}
+
+.card:not(:hover) .card__botoes{
     display: none;
+}
+
+@media (width <= 768px){
+    .card{
+        flex-basis: calc((100% / 2) - 1rem);
+    }
+}
+
+@media (width <= 360px){
+    .card{
+        flex-basis: 100%;
+    }
 }

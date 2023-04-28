@@ -1,0 +1,32 @@
+.container-dropdown{
+    position: relative;
+}
+
+.container-dropdown:not(:hover) > .dropdown{
+    display: none;
+}
+
+.dropdown{
+    background-color: #FFF;
+    border: 1px solid #C1c1c1;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    right: 0;
+    padding: 1rem;
+    position: absolute;
+    width: max-content;
+    z-index: 1;
+}
+
+.dropdown hr{
+    margin: 0;
+    width: 100%;
+}
+
+.dropdown__lista{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}

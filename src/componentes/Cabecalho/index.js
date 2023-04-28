@@ -1,15 +1,20 @@
+import Dropdown from '../Dropdown'
 import IconeDrodown from '../IconeDropdown'
 import './Cabecalho.css'
 
-const Cabecalho = () => {
+const Cabecalho = (props) => {
+    const listaFavoritos = props.listaProdutos.filter((produto) => produto.favorito)
+    const listaCarrinho = props.listaProdutos.filter((produto) => produto.carrinho)
+
     return(
         <header className='cabecalho'>
             <div className='cabecalho__container'>
-                <img className='cabecalho__logo' src='img/João.jpg'/>
+                <h1 className='cabecalho__titulo'>Madereira do Zé</h1>
 
                 <div className='cabecalho__dropdowns'>
-                    <IconeDrodown />
-                    <IconeDrodown />
+                    <Dropdown lista={listaFavoritos} icone='favorite_border'>Favoritos</Dropdown>
+                    <Dropdown lista={listaCarrinho} icone='shopping_cart'>Carrinho</Dropdown>
+                    <img className='cabecalho__foto' src='img/João.jpg'/>
                 </div>
             </div>
         </header>

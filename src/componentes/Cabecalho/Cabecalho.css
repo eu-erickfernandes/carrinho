@@ -2,6 +2,10 @@
     border-bottom: 1px solid #c1c1c1;
 }
 
+.cabecalho__titulo{
+    font-size: 2rem;
+}
+
 .cabecalho__container{
     align-items: center;
     display: flex;
@@ -12,14 +16,20 @@
     padding-inline: 1.5rem;
 }
 
-.cabecalho__logo{
+.cabecalho__foto{
     aspect-ratio: 1;
     border-radius: 100vmax;
-    width: 3.5rem;
+    width: 3rem;
 }
 
 .cabecalho__dropdowns{
     align-items: center;
     display: flex;
     gap: 1rem;
+}
+
+@media (width <= 360px){
+    .cabecalho__titulo{
+        font-size: 1.5rem;
+    }
 }

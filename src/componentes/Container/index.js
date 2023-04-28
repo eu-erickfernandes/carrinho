@@ -1,28 +1,21 @@
 import Card from '../Card'
 import './Container.css'
 
-const Container = () => {
+const Container = (props) => {
     return (
         <main>
             <div className='container'>
-                <h1 className='titulo'>Produtos</h1>
+                <h2 className='titulo'>Produtos</h2>
 
                 <ul className='lista-cards'>
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
+                    {props.listaProdutos.map((produto) => 
+                        <Card
+                            key={produto.titulo} 
+                            produto={produto}
+                            cardFavoritar={props.containerFavoritar}
+                            cardCarrinho={props.containerCarrinho} 
+                        />)
+                    }
                 </ul>
             </div>
         </main>

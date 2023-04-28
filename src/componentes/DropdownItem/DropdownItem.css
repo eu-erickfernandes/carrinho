@@ -1,0 +1,17 @@
+.dropdown__item{
+    align-items: center;
+    display: flex;
+    gap: .5rem;
+    width: max-content;
+}
+
+.dropdown__item img{
+    aspect-ratio: 1;
+    border-radius: .25rem;
+    max-height: 3rem;
+    object-fit: cover;
+}
+
+.item__preco{
+    font-size: .75rem;
+}

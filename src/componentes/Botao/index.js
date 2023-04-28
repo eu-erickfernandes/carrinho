@@ -1,8 +1,8 @@
 import './Botao.css'
 
-const Botao = () => {
+const Botao = (props) => {
     return (
-        <button className='botao material-icons-round'>favorite_border</button>
+        <button className='botao' onClick={props.acao}>{props.children}</button>
     )
 }
 

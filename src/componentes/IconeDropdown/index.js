@@ -1,8 +1,8 @@
 import './IconeDropdown.css'
 
-const IconeDrodown = () => {
+const IconeDrodown = (props) => {
     return (
-        <i className='icone-dropdown material-icons-round'>description</i>
+        <i className='icone-dropdown'>{props.children}</i>
     )
 }
 
